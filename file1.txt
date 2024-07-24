@@ -1,5 +1,6 @@
 Fully-actuated vs Underactuated Systems
 
+
 Many robots today move far too conservatively, and accomplish only a fraction of the tasks and achieve a fraction of the performance that they are mechanically capable of. 
 
 The world of robotics changed when, in late 1996, Honda Motor Co. announced that they had been working for nearly 15 years (behind closed doors) on walking robot technology.
