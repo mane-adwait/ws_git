@@ -2,6 +2,8 @@ Fully-actuated vs Underactuated Systems
 
 Many robots today move far too conservatively, and accomplish only a fraction of the tasks and achieve a fraction of the performance that they are mechanically capable of. 
 
+The world of robotics changed when, in late 1996, Honda Motor Co. announced that they had been working for nearly 15 years (behind closed doors) on walking robot technology.
+
 In some cases, we are still fundamentally limited by control technology which matured on rigid robotic arms in structured factory environments, where large actuators could be used to "shape" the dynamics of the machine to achieve precision and repeatability. 
 
 The study of underactuated robotics focuses on building control systems which instead exploit the natural dynamics of the machines in an attempt to achieve extraordinary performance in terms of speed, efficiency, or robustness.
