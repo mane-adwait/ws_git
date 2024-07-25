@@ -20,10 +20,15 @@ omega = np.zeros(t_array.size)
 theta[0] = theta_0
 omega[0] = omega_0
 
-# Euler's method for damped pendulum
+# Midpoint method for undamped pendulum
 for k in range(0, t_array.size-1):
-    theta[k+1] = theta[k] + dt*omega[k]
-    omega[k+1] = omega[k] + dt*(-g/L*np.sin(theta[k])  - c/(m*L**2)*omega[k] )
+    # Compute midpoints
+    theta_mid = theta[k] + 0.5 * dt * omega[k]
+    omega_mid = omega[k] + 0.5 * dt * (-g/L*np.sin(theta[k]))
+    
+    # Update the values using midpoints
+    theta[k+1] = theta[k] + dt * omega_mid
+    omega[k+1] = omega[k] + dt * (-g/L*np.sin(theta_mid))
 
 # Plot angle and angular velocity as functions of time
 plt.figure(figsize=(10,5))
