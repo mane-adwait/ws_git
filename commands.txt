@@ -1,0 +1,5 @@
+python3 -m venv ve1
+source ve1/bin/activate
+pip install --upgrade pip
+pip install numpy
+pip install matplotlib
