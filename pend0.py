@@ -23,7 +23,7 @@ omega[0] = omega_0
 # Euler's method for undamped pendulum
 for k in range(0, t_array.size-1):
     theta[k+1] = theta[k] + dt*omega[k]
-    omega[k+1] = omega[k] + dt*(-g/L*np.sin(theta[k]) )
+    omega[k+1] = omega[k] + dt*(-g/L*np.sin(theta[k])  - c/(m*L**2)*omega[k] )
 
 # Plot angle and angular velocity as functions of time
 plt.figure(figsize=(10,5))
@@ -31,7 +31,7 @@ plt.plot(t_array, theta, label='Angle')
 plt.plot(t_array, omega, label='Angular velocity')
 plt.xlabel('Time (s)')
 plt.ylabel('Angle, Angular velocity')
-plt.title('Undamped pendulum')
+plt.title('Damped pendulum')
 plt.legend()
 plt.grid()
 plt.show()
