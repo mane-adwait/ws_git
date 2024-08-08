@@ -46,15 +46,16 @@ plt.show()
 # Euler's method is a first-order method, which means 
 # that the error in the method is proportional to the time step.
 
-# # Euler's method for undamped pendulum
+# # Explicit Euler's method for undamped pendulum
 # for k in range(0, t_array.size-1):
 #     theta[k+1] = theta[k] + dt*omega[k]
 #     omega[k+1] = omega[k] + dt*(-g/L*np.sin(theta[k]) )
 
 # The midpoint method is a second-order method, which means 
 # that the error in the method is proportional to the square of the time step.
+# https://en.wikipedia.org/wiki/Midpoint_method
 
-# # Midpoint method for undamped pendulum
+# # Explicit midpoint method for undamped pendulum
 # for k in range(0, t_array.size-1):
 #     # Compute midpoints
 #     theta_mid = theta[k] + 0.5 * dt * omega[k]
