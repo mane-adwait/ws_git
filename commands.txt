@@ -1,5 +1,6 @@
 python3 -m venv ve1
-# We can make it a hidden directory by writing .ve1 instead of ve1
+# We can make it a hidden directory by writing .ve1 instead of ve1.
+# Use .ve0 as the name since I like to starting numbering with 0.
 
 source ve1/bin/activate
 pip install --upgrade pip
