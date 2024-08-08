@@ -1,4 +1,6 @@
 python3 -m venv ve1
+# We can make it a hidden directory by writing .ve1 instead of ve1
+
 source ve1/bin/activate
 pip install --upgrade pip
 pip install numpy
