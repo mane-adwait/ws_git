@@ -12,7 +12,7 @@ dt = 0.01         # time step (s)
 t_final = 10.0     # final time (s)
 
 # Initialize arrays for time, angle, and angular velocity
-t_array = np.arange(0, t_final, dt)
+t_array = np.arange(0, t_final, dt) # arange excludes the final value
 theta = np.zeros(t_array.size)
 omega = np.zeros(t_array.size)
 
