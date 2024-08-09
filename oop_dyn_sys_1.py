@@ -14,3 +14,10 @@ class DynamicalSystem:
         # Run the ode function (called func with a dummy input)
         dummy_output = self.ode(np.ones((100,1)))
         sx = dummy_output.shape
+
+        nt = t.shape
+
+        # Time is a column vector i.e. down a column
+        x = np.shape((sx[0], nt)) 
+
+        x[0,:] = x0.T # Set the initial condition.
