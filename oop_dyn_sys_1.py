@@ -21,3 +21,8 @@ class DynamicalSystem:
         x = np.shape((sx[0], nt)) 
 
         x[0,:] = x0.T # Set the initial condition.
+
+        for i in np.arange(0,nt):
+            x[i+1,:] = x[i,:] + self.ode(x[i,:])*self.dt
+
+            return (t,x)
